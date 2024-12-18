@@ -1,0 +1,23 @@
+.flex-parent{  
+    height: 800px;
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-wrap: wrap; */
+}
+.flex-parent div {
+    width: 100px;
+    height: 100px;
+    background: #37e606aa;
+}
