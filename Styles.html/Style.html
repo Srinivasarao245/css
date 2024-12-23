@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        .input-box{
+            position: relative;
+            width:310px;
+            margin:30px 0;
+            border-bottom:2px solid #fff;
+        }
+        .input-box label{
+            position: absolute;
+            top:50%;
+            left:5px;
+            transform: translateY(-50%);
+            font-size: 1em;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .input-box input:valid~label, 
+        .input-box input:focus~label
+        {
+            top: -5px;
+        }
+        .input-box input{
+            width: 100%;
+            height: 50px;
+            background:transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            color: #fff;
+            padding:0 35px 0 5px;
+        }
+    </style>
+</head>
+<body  style="display: flex;justify-content:center;align-items:center;min-height:100vh;background-image: url(https://www.ionos.it/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg);background-size:cover;background-position:center;">
+    <div style="position: relative;width:400px;height:400px;background:transparent;border: 2px solid rgba(255,255,255,.5); border-radius:20px;display:flex;justify-content:center;align-items:center;backdrop-filter:blur(15px);">
+        <form action="">
+            <h1 style="font-size: 2em;text-align:center;color:#fff;padding: 0%;">Login</h1>
+            <div class="input-box">
+                <input type="email">
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password">
+                <label>Password</label>
+            </div>
+            <div style="margin: -15px 0 15px;font-size: .9em;color:#fff;display:flex;justify-content:space-between;">
+                <label for="" style="margin-right:3px;"><input type="checkbox">Remember me</label>
+                <a href="/Add" style="color:#fff;text-decoration:none;">Forgot Password?</a>
+            </div>
+            <button style="width:100%;height:40px;background:#fff;border:none;outline:none;border-radius:40px;cursor:pointer;font-size:1em;color:#000;font-weight:500;">Login</button>
+            <div style="font-size: .9em;color:#fff;text-align: center;margin: 25px 0 10px;">
+                <p>Don't have an account? <a href="/Login" style="color:#fff;text-decoration:none;">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
